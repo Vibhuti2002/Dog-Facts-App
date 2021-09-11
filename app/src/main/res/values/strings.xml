@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Facts</string>
+    <string name="loading">loading</string>
+    <string name="facts">Facts</string>
+    <string name="next">next</string>
+    <string name="previous">previous</string>
+    <string name="wait">..........</string>
+</resources>
