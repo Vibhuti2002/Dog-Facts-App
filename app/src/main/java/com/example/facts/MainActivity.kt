@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity()  {
         setFact(index)
     }
     fun setFact(index:Int){
-        val quoteService = RetrofitHelper.getInstance().create(FactService::class.java)
-        val repository = FactsRepository(quoteService)
+        val factService = RetrofitHelper.getInstance().create(FactService::class.java)
+        val repository = FactsRepository(factService)
         mainViewModel = ViewModelProvider(this,MainViewModelFactory(repository)).get(MainViewModels::class.java)
         mainViewModel.facts.observe(this, Observer{
             printText.text = it[index].fact.toString()
